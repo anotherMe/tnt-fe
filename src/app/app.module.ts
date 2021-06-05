@@ -9,9 +9,11 @@ import { TaskComponent } from './tasklist/task/task.component';
 import { TodoComponent } from './todo/todo.component';
 
 const routes: Routes = [
+  { path: '', component: TasklistComponent },
   { path: 'task', component: TasklistComponent },
   { path: 'todo', component: TodoComponent },
-  { path: '', redirectTo: '/task', pathMatch: 'full' },
+
+  //{ path: '', redirectTo: '/task', pathMatch: 'full' },
 ]
 
 @NgModule({
